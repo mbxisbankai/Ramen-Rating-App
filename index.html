@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramen Rating App</title>
+    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <header>
+        <h1>Ramen Rating App</h1>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Ramen Menu Section -->
+        <section id="ramen-menu-section">
+            <h2>Ramen Selection</h2>
+            <div id="ramen-menu"></div>
+        </section>
+
+        <!-- Ramen Details Section -->
+        <section id="ramen-detail">
+            <h2>Ramen Details</h2>
+            <img id="ramen-pic" alt="Select a ramen to view details">
+            <h3 id="ramen-name">Ramen Name</h3>
+            <p id="ramen-restaurant">Restaurant: </p>
+            <p id="ramen-rating">Rating: </p>
+            <p id="ramen-comment">Comment: </p>
+        </section>
+    </main>
+
+    <!-- Add Ramen Form -->
+    <section id="add-ramen">
+        <h2>Add a New Ramen</h2>
+        <form id="new-ramen">
+            <input type="text" id="new-name" placeholder="Ramen Name" required>
+            <input type="text" id="new-restaurant" placeholder="Restaurant Name" required>
+            <input type="url" id="new-image" placeholder="Image URL" required>
+            <input type="number" id="new-rating" placeholder="Rating (1-10)" min="1" max="10" required>
+            <input id="new-comment" placeholder="Write a comment..." required>
+            <button type="submit">Add Ramen</button>
+        </form>
+    </section>
+</body>
+</html>
